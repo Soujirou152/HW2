@@ -46,16 +46,6 @@ public class Zip {
 		}
 	}
 
-	public String getState() {
-		String s = zipCode.substring(0, 2);
-		System.out.println(s);
-		if (s.equals("06")) {
-			return "CT";
-		} else {
-			return "practice";
-		}
-
-	}
 
 	public static void main(String[] args) {
 		String s1 = "06006";
@@ -67,13 +57,22 @@ public class Zip {
 		Zip zip3 = new Zip(s3);
 
 		System.out.println(zip1.getZipCode());
+		System.out.println(zip2.getZipCode());
+		System.out.println(zip3.getZipCode());
+		
+		System.out.println(zip1.getZipPrefix());
+		System.out.println(zip2.getZipPrefix());
+		System.out.println(zip3.getZipPrefix());
+		
 		System.out.println(zip1.equals(zip2));
 		System.out.println(zip2.equals(zip1));
+		
 		System.out.println(zip1.equals(zip3));
-		System.out.println(zip1.getState());
-		// System.out.println(zip1.isPlus4());
-		// System.out.println(zip2.getZipCode());
-		// System.out.println(zip1.getZipPrefix());
+		System.out.println(zip2.equals(zip3));
+		
+		System.out.println(zip3.equals(zip1));
+		System.out.println(zip3.equals(zip2));
+		
 
 	}
 

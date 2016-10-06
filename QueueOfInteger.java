@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
 /**
- * Describe this class using Java doc here...
+ * QueueOfInteger creates an array that stores integers and pops them out in a
+ * first in first out style unlike the StackOfInteger class that pops out
+ * integers as a last in first out style
  * 
  * 
  * 
@@ -12,6 +14,7 @@ public class QueueOfInteger {
 	private Integer[] elements;
 	private int size;
 
+	/** This method returns the int variable size of the queue */
 	public int getSize() {
 		return size;
 	}
@@ -28,6 +31,7 @@ public class QueueOfInteger {
 		this.elements = new Integer[capacity];
 	}
 
+	/** enqueue adds an int, v, to the queue */
 	public void enqueue(int v) {
 		if (size >= elements.length) {
 			Integer[] temp = new Integer[elements.length * 2];
@@ -38,6 +42,10 @@ public class QueueOfInteger {
 		elements[size++] = v;
 	}
 
+	/**
+	 * dequeue outputs the first number in the queue and also removes that
+	 * number
+	 */
 	public int dequeue() {
 		int firstOut = elements[0];
 		Integer[] temp = new Integer[(elements.length * 2)];
