@@ -55,6 +55,4 @@ public class QueueOfChar {
 	// Be sure to add Java doc comments /** ... */
 	// just before each method except main()
 
-
-
 }

@@ -5,10 +5,7 @@ import java.util.ArrayList;
  * first in first out style unlike the StackOfInteger class that pops out
  * integers as a last in first out style
  * 
- * 
- * 
  * @author Pengxue Her
- *
  */
 public class QueueOfInteger {
 	private Integer[] elements;

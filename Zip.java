@@ -46,7 +46,6 @@ public class Zip {
 		}
 	}
 
-
 	public static void main(String[] args) {
 		String s1 = "06006";
 		String s2 = "06006-5743";
@@ -59,20 +58,27 @@ public class Zip {
 		System.out.println(zip1.getZipCode());
 		System.out.println(zip2.getZipCode());
 		System.out.println(zip3.getZipCode());
-		
+
 		System.out.println(zip1.getZipPrefix());
 		System.out.println(zip2.getZipPrefix());
 		System.out.println(zip3.getZipPrefix());
-		
+
+		System.out.println(zip1.isPlus4);
+		System.out.println(zip2.isPlus4);
+		System.out.println(zip3.isPlus4);
+
+		System.out.println(zip1.toString());
+		System.out.println(zip2.toString());
+		System.out.println(zip3.toString());
+
 		System.out.println(zip1.equals(zip2));
 		System.out.println(zip2.equals(zip1));
-		
+
 		System.out.println(zip1.equals(zip3));
 		System.out.println(zip2.equals(zip3));
-		
+
 		System.out.println(zip3.equals(zip1));
 		System.out.println(zip3.equals(zip2));
-		
 
 	}
 

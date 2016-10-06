@@ -114,12 +114,14 @@ public class Grade {
 		courseGrade.addHw(10);
 		courseGrade.addRdQ(8);
 		courseGrade.addRdQ(7.54);
+		courseGrade.addRdQ(6.5);
 		courseGrade.addRdQ(9);
 		courseGrade.addLab(10);
 		courseGrade.addLab(10);
 		courseGrade.addLab(10);
 		courseGrade.addLab(10);
-		courseGrade.addRvQ(11.21667 );
+		courseGrade.addRvQ(11.21667);
+		courseGrade.addRvQ(14.66667);
 
 		System.out.println(courseGrade.calcGradePct() + " " + courseGrade.calcCourseGrade() + "");
 		// courseGrade.calcCourseGrade());

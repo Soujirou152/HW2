@@ -18,16 +18,16 @@ public class Koch {
 	}
 
 	public static void main(String[] args) {
-		int order = 3;
+		int order = 7;
 		double step = 1.0 / Math.pow(3, order);
 
 		Turtle turtle = new Turtle(0.3, .7, 00.0);
 		turtle.penDown();
-		koch(order, step/3, turtle);
+		koch(order, step / 3, turtle);
 		turtle.turnLeft(-120);
-		koch(order, step/3, turtle);
+		koch(order, step / 3, turtle);
 		turtle.turnLeft(-120);
-		koch(order,step/3,turtle);
+		koch(order, step / 3, turtle);
 
 	}
 }

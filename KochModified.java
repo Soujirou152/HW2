@@ -21,17 +21,15 @@ public class KochModified {
 		StdOut.println(
 				"How many sides do you want your koch snowflake to have? (only those which the half of the number is a factor of 360 and half your number is a whole number, i.e. 2, 4, 10, 6, but not 5 or 9 ");
 		int s = StdIn.readInt();
-		while( s % 2 != 0 || 360 % (s/2) != 0){
+		while (s % 2 != 0 || 360 % (s / 2) != 0) {
 			StdOut.println("The half of the number you entered is not a factor of 360 or not an integer! Try again: ");
 			s = StdIn.readInt();
-			
-		}
-			double angle = -360 / (s / 2);
-			for (int i = 0; i < s; i++) {
-				kochModified(order, step / (s / 2), turtle);
-				turtle.turnLeft(angle);
 
-			
+		}
+		double angle = -360 / (s / 2);
+		for (int i = 0; i < s; i++) {
+			kochModified(order, step / (s / 2), turtle);
+			turtle.turnLeft(angle);
 
 		}
 	}
